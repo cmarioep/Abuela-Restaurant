@@ -1,5 +1,5 @@
 :root {
-    --darkColor: rgba(0,0,0,0.5);
+    --darkColor: rgba(0,0,0,0.3);
     --mainColor: #A62F24;
     --secundaryColor: #8C5A5A;
     --contentColor: #590F0F;
@@ -13,7 +13,7 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration-style: none;
 }
 
 body {
@@ -55,7 +55,7 @@ body {
 }
 
 .sticky {
-    background-color: rgba(0,0,0,0.9);
+    /* background-color: rgba(0,0,0,0.9); */
     box-shadow: 0 1px 5px 1px var(--mainColor);
 }
 
@@ -192,7 +192,7 @@ body {
 
 .gallery {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     font-size: 1.5rem;
     color: var(--contentColor);
 
@@ -200,13 +200,15 @@ body {
     flex-direction: column;
     
     /* padding: 4rem; */
-    margin-top: 10vh;
+    padding-top: 10vh;
     border: 1px solid green;
+    
 
 }
 
 .textContent {
-    padding: 4rem;
+    border: 1px solid purple;
+    padding: 3rem;;
     height: 60%;;
    
 }
@@ -235,7 +237,7 @@ body {
 
     
     /* padding: 4rem; */
-    /* border: 1px solid green; */
+    border: 1px solid green;
 
 }
 
