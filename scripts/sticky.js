@@ -4,14 +4,14 @@ window.onscroll = function() {myFunction()};
 
 // Get the header
 var header = document.getElementById("menuBar");
-var content = document.getElementById("contentViewport");
+var content = document.getElementById("about");
 
 
 
 
 
 // Get the offset position of the navbar
-var sticky = contentViewport.offsetTop;
+var sticky = about.offsetTop;
 
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
