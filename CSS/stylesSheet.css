@@ -1,5 +1,5 @@
 :root {
-    --darkColor: rgba(0,0,0,0.3);
+    --darkColor: rgba(0,0,0,0.7);
     --mainColor: #A62F24;
     --secundaryColor: #8C5A5A;
     --contentColor: #590F0F;
@@ -12,9 +12,6 @@
     padding: 0;
 }
 
-a {
-    text-decoration-style: none;
-}
 
 body {
     background-color: var(--backgroundColor);
@@ -43,19 +40,13 @@ body {
     width: 100vw;
     background-color: var(--darkColor);
     justify-content: center;
-   
-    
-    
-    
-    
-    
-    
+     
 
     z-index: 10000;
 }
 
 .sticky {
-    /* background-color: rgba(0,0,0,0.9); */
+    background-color: var(--darkColor);
     box-shadow: 0 1px 5px 1px var(--mainColor);
 }
 
@@ -100,7 +91,10 @@ body {
     
 }
 
-
+.menu-item a {
+    text-decoration: none;
+    color: var(--backgroundColor)
+}
 
 .logo {
     /* align-self: center; */
@@ -219,8 +213,9 @@ body {
     height: 50%;;
     background-image: url(/media/img-parallax.jpg);
     background-attachment: fixed;
+    background-position: left top 12vh;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .imge {
@@ -231,26 +226,54 @@ body {
 
 .standarContent {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     font-size: 1.5rem;
     color: var(--contentColor);
 
     
-    /* padding: 4rem; */
-    border: 1px solid green;
+    padding-top: 10vh;
+    border: 1px solid blue;
 
 }
 
-.menu-board {
-    position: absolute;
-    left: 4rem;
-    height: 400px;
-    width: 300px;
-    border: 1px solid black;
- 
+
+.menuContent {
+    border: 1px solid purple;
+    height: 100%;
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+   
 }
+
+    .menuDescription {
+        /* justify-self: flex-start; */
+        border: 1px solid black;
+        width: calc(100%/3);
+    }
+
+    .todaysMenu {
+        /* justify-self: center; */
+        border: 1px solid black;
+        width: calc(100%/3);
+    }
+
+    .menu-board {
+        
+        /* justify-self: flex-end; */
+        height: 500px;
+        width: 400px;
+    }
+
+
 
 .board-img {
     width: 100%;
     height: 100%;
+
+    box-shadow: 0 10px 10px -2px var(--darkColor);
 }
