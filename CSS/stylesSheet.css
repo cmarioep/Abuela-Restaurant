@@ -150,7 +150,7 @@ body {
         }
 
 .gallery h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 1rem;
     text-align: center;
 }
@@ -180,7 +180,7 @@ body {
 
 .textContent {
     /* border: 1px solid purple; */
-    padding: 3rem;;
+    padding: 3vh;;
     height: 40%;;
    
 }
@@ -210,25 +210,32 @@ body {
 
     
     padding-top: 10vh;
-    
-
 }
 
-.map {
-    border: 5px solid var(--mainColor);
-    box-shadow: 0 10px 5px -5px var(--darkColor);
-    display: inline-block;
-}
-
-.menuBackground {
-    background-image: url(/media/pexels-photo-1618989.jpeg);
+.contacAndLocation {
+    background-image: url(/media/wood-light-summer-lunch.jpg);
     
     /* background-position: left top 12vh; */
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+
+
+.map {
+    border: 10px solid var(--mainColor);
+    border-radius: 15px;
+    box-shadow: 0 10px 5px -5px var(--darkColor);
+    display: inline-block;
+}
+
+
+
+.menuBackground {
+    
 
     color: var(--backgroundColor);
-    text-shadow: 1px 1px var(--darkColor);
+    /* text-shadow: 1px 1px var(--darkColor); */
 
 }
 
@@ -242,8 +249,8 @@ body {
         justify-content: space-evenly;
         flex-wrap: wrap;
 
-        color: var(--backgroundColor);
-        text-shadow: 1px 1px 1px var(--mainColor);
+        color: var(--contentColor);
+        /* text-shadow: 1px 1px 1px var(--mainColor); */
     
     }
 
@@ -264,6 +271,7 @@ body {
             /* justify-self: flex-end; */
             height: 500px;
             width: 400px;
+            
         }
 
     footer {
@@ -277,7 +285,12 @@ body {
 .board-img {
     width: 100%;
     height: 100%;
-    border: 10px solid var(--backgroundColor);
+    border: 10px solid var(--mainColor);
+            
+
+    border-radius: 15px;
+    
+
 
     box-shadow: 0 10px 5px -5px var(--darkColor);
 }
