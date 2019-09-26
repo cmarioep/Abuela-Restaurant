@@ -7,22 +7,82 @@
     <meta name="description" content="Cocinamos como la abuela nos enseñó: con amor.">
     <title>Abuela Restaurant</title>
     <link rel="stylesheet" href="CSS/stylesSheet.css">
-    <link rel="stylesheet" href="CSS/slider.css">
+    <link rel="stylesheet" href="CSS/menu.css">
 </head>
 
 <body>
+    <!-- Menu -->
     <header class="menuBar" id="menuBar">
         <ul class="menu">
             <li class="menu-item">Reserva</li>
-            <li class="menu-item"><a href="#about">Contacto</a></li>
-            <li class="logo"></li>
+            <li class="menu-item"><a href="#contact">Contacto</a></li>
+            <li class="menu-item"><a href="#aboutUs"><div class="menu-item-logo"></div></a></li>
             <li class="menu-item"><a href="#menu">Menú</a></li>            
             <li class="menu-item">Domicilio</li>
         </ul>
     </header>
 
     <main>
-        <div class="homeViewport">
+        <!-- Homepage -->
+        <div class="l-viewportContainer">
+            <video class="m-videoBackground" autoplay loop muted>
+                <source src="/media/homeVideo.mp4"  type="video/mp4">
+            </video>
+            <div class="m-coverImage">
+                <img src="/media/imagotipo_abuela_fondo_negro.png" alt="Logo Abuela Restaurant">
+            </div>
+        </div>
+
+        <!-- About Us page -->
+        <div class="l-viewportContainer aboutUs" id="aboutUs">
+            <h1>Abuela Restaurant</h1>  
+            <div class="parallax">
+                <!-- <div class="eslogan">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, dolore?</p>
+                </div> -->
+            </div>    
+            <div class="footerImg">
+                <div class="logoBox">
+                    <img src="/media/imagotipo_abuela.png" alt="Logo Abuela Restaurant">
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu page -->
+         <div class="l-viewportContainer menuContent" id="menu">
+            <div class="menuDescription">
+                <h2>Menu</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe consequuntur culpa illum excepturi labore. Perferendis fugiat nisi deleniti illum molestias magni quidem ex. Iusto laudantium, cumque nemo numquam consequatur fuga odio saepe natus in tempore tempora minima nihil autem animi?</p>
+            </div>
+            
+            <div class="menu-board">
+                <img src="/media/menu/menu 1.jpg" alt="" class="board-img">
+            </div>
+           
+    
+        </div>
+
+        <!-- Contac and location page -->
+        <div class="l-viewportContainer standarContent" id="contact">
+                       
+                <div class="contactContainer">
+                    <form class="contactForm">
+                        <label>Nombre: <input type="text"></label><br>
+                        <label>Telefono: <input type="tel"></label><br>
+                        <label>Mensaje: <textarea name="" id="" cols="30" rows="10"></textarea></label>
+        
+                    </form>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15922.290767903878!2d-76.3039945!3d3.9013345!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4bf0f20e115982a!2sAbuela%20Restaurant!5e0!3m2!1ses-419!2sco!4v1567456223210!5m2!1ses-419!2sco" width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
+                         </div>
+                </div>
+            
+        </div>
+        
+
+
+        
+        <!-- <div class="sliderVieport">
            <div class="slider">
                 <div class="slider-content">
                     <div class="slider-item">
@@ -48,43 +108,19 @@
                     </div>
                 </div>
            </div>
-           <div class="logoContainer">
+           <div class="imgContainer2">
                 <div class="logotipo">
                     <img src="/media/imagotipo_abuela.png" alt="" class="img-logotipo">
                 </div>
             </div>
-        </div>
+        </div> -->
     
-        <div class="gallery" id="about">
-            <div class="parallax"></div> 
-            <div class="textContent">
-                <h1>Abuela Restaurant</h1>  
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum deserunt quod molestias sit. Quia eveniet consequuntur sequi nemo fuga unde iusto? Error dolorem aliquid reprehenderit debitis quam earum modi enim, sint mollitia soluta deleniti. Quod quasi laborum nemo nesciunt magni reiciendis sed incidunt officiis at obcaecati ducimus vitae accusamus autem vero, delectus quia, corrupti ipsum ab voluptatibus</p>
-            </div>
-        </div>
+
     
-        <div class="contacAndLocation standarContent" >
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15922.290767903878!2d-76.3039945!3d3.9013345!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4bf0f20e115982a!2sAbuela%20Restaurant!5e0!3m2!1ses-419!2sco!4v1567456223210!5m2!1ses-419!2sco" width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
-            </div>
-        </div>
+ 
     
     
-        <div class="standarContent menuBackground" id="menu">
-            <div class="menuContent">
-                <div class="menuDescription textContent">
-                    <h2>Menu</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe consequuntur culpa illum excepturi labore. Perferendis fugiat nisi deleniti illum molestias magni quidem ex. Iusto laudantium, cumque nemo numquam consequatur fuga odio saepe natus in tempore tempora minima nihil autem animi?</p>
-                </div>
-                <div class="menu-board">
-                    <img src="/media/menu/menu 1.jpg" alt="" class="board-img">
-                </div>
-                <!-- <div class="todaysMenu">
-                    
-                </div> -->
-              
-            </div>
-        </div>
+   
     </main>
 
     <footer>
