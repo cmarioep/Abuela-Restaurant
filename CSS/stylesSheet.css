@@ -34,8 +34,10 @@ body {
     align-items: center;
 } */
 
+
+/* ==================================homepage============================= */
 /* en sass */
-.m-videoBackground {
+.videoContainer {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,13 +49,12 @@ body {
     z-index: 0;
     
 }
-
-.m-coverImage {
+/* en sass */
+.coverContainer {
     /* padding: 1%; */
     width: 100%;
     min-height: 100vh;
-    background-color: var(--darkLightColor);
-    
+       
     position: relative;
     z-index: 1000;
    
@@ -61,15 +62,17 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-    .m-coverImage > img {
+    /* en sass */
+    .t-darkLight {
+        background-color: var(--darkLightColor);
+    }
+    /* en sass */
+    .coverContainer__cover {
         width: 50%;
         height: 50%;
     }
 
-
-
-
+/* ===================AboutUS=============================== */
 
 .aboutUs {
     width: 100%;

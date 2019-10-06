@@ -1,11 +1,32 @@
-.m-videoBackground {
+// Modules for homepage
+
+.videoContainer {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 0;
+   
     min-width: 100%;
     min-height: 100vh;
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
-    z-index: 0;    
 }
+
+.coverContainer {
+    position: relative;
+    z-index: 1000;
+
+    width: 100%;
+    min-height: 100vh;
+       
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .coverContainer__cover {
+        width: 50%;
+        height: 50%;
+    }
+
+}//End coverContainer
