@@ -1,5 +1,6 @@
+//===========================
 // Modules for homepage
-
+//===========================
 .videoContainer {
     position: absolute;
     top: 0;
@@ -23,10 +24,81 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
     .coverContainer__cover {
         width: 50%;
         height: 50%;
     }
 
-}//End coverContainer
+//===========================
+// Modules for About Us page
+//===========================
+
+.aboutUs__mainTitle {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.aboutUs__parallax {
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+    animation: parallaxSlider 45s ease-in-out infinite;
+  
+    @keyframes parallaxSlider {
+        0%, 100% {
+            background-image: url(/media/img-parallax.jpg);
+        }
+        17% {
+            background-image: url(/media/slider/1.jpg);
+        }
+        34% {
+            background-image: url(/media/slider/2.jpg);
+        }
+        50% {
+            background-image: url(/media/slider/3.jpg);
+        }
+        67% {
+            background-image: url(/media/slider/4.jpg);
+        }
+        84% {
+            background-image: url(/media/slider/5.jpg);
+        }
+    } 
+}
+
+.aboutUs__slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+//===========================
+// Modules for Menu page
+//===========================
+.theMenu__description {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+   
+    border: 5px solid var(--mainColor);
+    border-radius: 15px;
+    box-shadow: 0 5px 5px 2px var(--darkColor);
+  
+    background-image: url(/media/menu_background.jpg);
+    background-size: 100% 100%;
+
+}
+
+    .description__subTitle {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .description__text{
+        padding: 1rem;
+        text-align: center;
+    }

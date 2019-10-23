@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Cocinamos como la abuela nos enseñó: con amor.">
     <title>Abuela Restaurant</title>
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
     <link rel="stylesheet" href="CSS/stylesSheet.css">
     <link rel="stylesheet" href="CSS/menu.css">
 </head>
@@ -14,17 +15,17 @@
     <!-- Menu -->
     <header class="menuBar" id="menuBar">
         <ul class="menu">
-            <li class="menu-item">Reserva</li>
-            <li class="menu-item"><a href="#contact">Contacto</a></li>
+            <li class="menu-item">Menú</li>
+            <li class="menu-item"><a href="#contact">Encuentranos</a></li>
             <li class="menu-item"><a href="#aboutUs"><div class="menu-item-logo"></div></a></li>
-            <li class="menu-item"><a href="#menu">Menú</a></li>            
-            <li class="menu-item">Domicilio</li>
+            <li class="menu-item"><a href="#menu">Domicilio</a></li>            
+            <li class="menu-item">Nosotros</li>
         </ul>
     </header>
 
     <main>
         <!-- Homepage -->
-        <div class="l-viewportContainer">
+        <div class="l-generalViewport">
             <video class="videoContainer" autoplay loop muted>
                 <source src="/media/homeVideo.mp4"  type="video/mp4">
             </video>
@@ -33,41 +34,52 @@
             </div>
         </div>
 
-
-        <!-- About Us page -->
-        <div class="l-viewportContainer aboutUs" id="aboutUs">
-            <h1>Abuela Restaurant</h1>  
-            <div class="parallax">
-                <!-- <div class="eslogan">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, dolore?</p>
-                </div> -->
-            </div>    
-            <div class="footerImg">
-                <div class="logoBox">
-                    <img src="/media/imagotipo_abuela.png" alt="Logo Abuela Restaurant">
-                </div>
+        <!-- About Us -->
+        <div id="aboutUs" class="l-generalViewport l-aboutUs" >
+            <h1 class="l-aboutUS__mainTitle aboutUs__mainTitle">Abuela Restaurant</h1>  
+            <div class="l-aboutUs__parallax aboutUs__parallax"></div>    
+            <div class="l-aboutUs__slogan aboutUs__slogan">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam neque dignissimos a rem perspiciatis aspernatur."</p>
             </div>
         </div>
 
-        <!-- Menu page -->
-        <div class="l-viewportContainer menuContent" id="menu">
-            <div class="menuDescription">
-                <h2>Menu</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe consequuntur culpa illum excepturi labore. Perferendis fugiat nisi deleniti illum molestias magni quidem ex. Iusto laudantium, cumque nemo numquam consequatur fuga odio saepe natus in tempore tempora minima nihil autem animi?</p>
+        <!-- Menu -->
+        <div id="theMenu" class="l-generalViewport l-theMenu" >
+            <div class="l-theMenu__description theMenu__description">
+                <h2 class="description__subTitle">Menu</h2>
+                <p class="description__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe consequuntur culpa illum excepturi labore. Perferendis fugiat nisi deleniti illum molestias magni quidem ex. Iusto laudantium, cumque nemo numquam </p>
             </div>
-            <div class="menu-board">
-                <img src="/media/menu/menu 1.jpg" alt="" class="board-img">
+            <div class="theMenu__board">
+                <img src="/media/menu/menu 1.jpg" alt="" class="board__img">
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- Contac and location page -->
-        <div class="l-viewportContainer standarContent" id="contact">
+        <div class="l-generalViewport standarContent" id="contact">
                        
                 <div class="contactContainer">
                     <form class="contactForm">
-                        <label>Nombre: <input type="text"></label><br>
-                        <label>Telefono: <input type="tel"></label><br>
-                        <label>Mensaje: <textarea name="" id="" cols="30" rows="10"></textarea></label>
+                        <input type="text" placeholder="Nombre"><br>
+                        <input type="tel" placeholder="Telefono"><br>
+                        <textarea placeholder="Dejanos tu comentario" name="" id="" cols="30" rows="10"></textarea>
         
                     </form>
                         <div class="map">
@@ -76,53 +88,24 @@
                 </div>
             
         </div>
-        
-
-
-        
-        <!-- <div class="sliderVieport">
-           <div class="slider">
-                <div class="slider-content">
-                    <div class="slider-item">
-                        <img src="/media/slider/1.jpg" alt="" class="slider-img">
-                    </div>
-                    <div class="slider-item">
-                        <img src="/media/slider/2.jpg" alt="" class="slider-img">
-                    </div>
-                    <div class="slider-item">
-                        <img src="/media/slider/3.jpg" alt="" class="slider-img">
-                    </div>
-                    <div class="slider-item">
-                        <img src="/media/slider/4.jpg" alt="" class="slider-img">
-                    </div>
-                    <div class="slider-item">
-                        <img src="/media/slider/5.jpg" alt="" class="slider-img">
-                    </div>
-                    <div class="slider-item">
-                        <img src="/media/slider/6.jpg" alt="" class="slider-img">
-                    </div>
-                    <div class="slider-item">
-                        <img src="/media/slider/7.jpg" alt="" class="slider-img">
-                    </div>
-                </div>
-           </div>
-           <div class="imgContainer2">
-                <div class="logotipo">
-                    <img src="/media/imagotipo_abuela.png" alt="" class="img-logotipo">
-                </div>
-            </div>
-        </div> -->
-    
-
-    
- 
-    
+  
     
    
     </main>
 
-    <footer>
-        <p>Contacto:</p>
+    <footer class="footer">
+        <div><p>Abuela Restaurant</p>
+                <p>Dirección: Calle 1 # 1-47 Barrio</p>
+                <p>Telefono: 311 236 2336</p>
+                <p>Buga - Valle del Cauca</p>
+                <p>Correo Electronico:</p>
+        </div>
+        <div class="footer__logo">
+            <img src="/media/imagotipo_abuela_blanco.png" alt="Logo Abuela Restaurant" class="footer__logoImage">
+        </div>
+        <div>
+            <p>En Redes:</p>
+        </div>
     </footer> 
  
 

@@ -1,19 +1,61 @@
+@mixin dimension($l-width, $l-height) {
+    width: $l-width;
+    height: $l-height;
+}
+  
 .l-{
-    &viewportContainer {
-        width: 100%;;
+    &generalViewport {
+        width: 100%;
         min-height: 100vh;
     }
     
-  
+    // About US section
+    &aboutUs {
+    //main container
+        @include dimension(100%, 100vh);
+
+        padding-top: 10vh;
+        
+        display: flex;
+        flex-direction: column;
+
+            &__mainTitle {
+                @include dimension(100%, 15vh);
+            }
+                            
+            &__parallax {
+                @include dimension(100%, 60vh);
+            }
+
+            &__slogan {
+                @include dimension(100%, 15vh);
+            }
+    }
+    
+    // the Menu section
+    &theMenu {
+        padding-top: 10vh;
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &__description {
+            height: 500px;
+            width: 400px;
+        }
+
+
+
+    }
 
 
 
 
 
 
-
-
+    
 }
-
 
 

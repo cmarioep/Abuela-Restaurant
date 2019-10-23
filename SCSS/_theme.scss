@@ -1,5 +1,9 @@
 t-{
-    &darkLight: var(--darkLightColor);
+    &darkLight: var(--darkLightColor); /*Used in homepage as filter for coverContainer*/
+
+    &backgroundParallax {
+        background-image: url(/media/img-parallax.jpg);
+    }
 
 
 
