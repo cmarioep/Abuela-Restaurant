@@ -1,0 +1,29 @@
+@font-face {
+    font-family: amarillo;
+    src: url(/fonts/Amarillo.otf);
+}
+
+
+.f- { 
+
+    &titles {
+        font-family: amarillo;
+    }
+
+    &small {
+        font-size: 0.8rem;
+    }
+
+    &normal {
+        font-size: 1.3rem;
+    }
+
+    &medium {
+        font-size: 2rem;
+    }
+
+    &big {
+        font-size: 3rem;
+    }
+
+}

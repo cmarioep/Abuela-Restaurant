@@ -2,13 +2,27 @@
     width: $l-width;
     height: $l-height;
 }
-  
+
+%viewporContainer {
+    padding-top: 10vh;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+%responsiveViewport {
+    width: 100%;
+    min-height: 100vh;
+}
+
 .l-{
     &generalViewport {
-        width: 100%;
-        min-height: 100vh;
+        @extend %responsiveViewport;
     }
     
+
     // About US section
     &aboutUs {
     //main container
@@ -31,31 +45,44 @@
                 @include dimension(100%, 15vh);
             }
     }
+
     
     // the Menu section
     &theMenu {
-        padding-top: 10vh;
-    
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
+        @extend %viewporContainer;
 
         &__description {
-            height: 500px;
-            width: 400px;
+            @include dimension(400px, 500px);
         }
 
-
-
+        &__board {
+            @include dimension(400px, 500px);
+        }
     }
 
 
+    // Contact section
+    &contact{
+        @extend %responsiveViewport;
+        @extend %viewporContainer;
+    }
 
 
+    // footer section
+    &footer {
+        //main container
+        @include dimension(100%, 15vh);
+        padding: 1rem;
 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
 
-    
+       
+        &__logo {
+            @include dimension(160px, 10vh);
+        }
+    }
+
 }
-
-

@@ -7,20 +7,23 @@
     <meta name="description" content="Cocinamos como la abuela nos enseñó: con amor.">
     <title>Abuela Restaurant</title>
     <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
-    <link rel="stylesheet" href="CSS/stylesSheet.css">
-    <link rel="stylesheet" href="CSS/menu.css">
+    <!-- <link rel="stylesheet" href="CSS/stylesSheet.css"> -->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <!-- <link rel="stylesheet" href="CSS/menu.css"> -->
 </head>
-
-<body>
-    <!-- Menu -->
-    <header class="menuBar" id="menuBar">
-        <ul class="menu">
-            <li class="menu-item">Menú</li>
-            <li class="menu-item"><a href="#contact">Encuentranos</a></li>
-            <li class="menu-item"><a href="#aboutUs"><div class="menu-item-logo"></div></a></li>
-            <li class="menu-item"><a href="#menu">Domicilio</a></li>            
-            <li class="menu-item">Nosotros</li>
-        </ul>
+<body class="t-generalBackground">
+    
+    <header>
+        <!-- Menu navigator -->
+        <nav class="menuBar" id="menuBar">
+            <ul class="menu">
+                <li class="menu-item">Menú</li>
+                <li class="menu-item"><a href="#contact">Encuentranos</a></li>
+                <li class="menu-item"><a href="#aboutUs"><div class="menu-item-logo"></div></a></li>
+                <li class="menu-item"><a href="#menu">Domicilio</a></li>            
+                <li class="menu-item">Nosotros</li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -36,79 +39,56 @@
 
         <!-- About Us -->
         <div id="aboutUs" class="l-generalViewport l-aboutUs" >
-            <h1 class="l-aboutUS__mainTitle aboutUs__mainTitle">Abuela Restaurant</h1>  
+            <h1 class="l-aboutUS__mainTitle aboutUs__mainTitle f-big f-titles">Abuela Restaurant</h1>  
             <div class="l-aboutUs__parallax aboutUs__parallax"></div>    
             <div class="l-aboutUs__slogan aboutUs__slogan">
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam neque dignissimos a rem perspiciatis aspernatur."</p>
+                <p class="f-medium f-titles">"Cocinamos como la abuela nos enseñó: con amor."</p>
             </div>
         </div>
 
-        <!-- Menu -->
+        <!-- The Menu -->
         <div id="theMenu" class="l-generalViewport l-theMenu" >
             <div class="l-theMenu__description theMenu__description">
-                <h2 class="description__subTitle">Menu</h2>
-                <p class="description__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe consequuntur culpa illum excepturi labore. Perferendis fugiat nisi deleniti illum molestias magni quidem ex. Iusto laudantium, cumque nemo numquam </p>
+                <h2 class="description__subTitle f-medium">Menu</h2>
+                <p class="description__text f-normal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe consequuntur culpa illum excepturi labore. Perferendis fugiat nisi deleniti illum molestias magni quidem ex. Iusto laudantium, cumque nemo numquam </p>
             </div>
-            <div class="theMenu__board">
+            <div class="l-theMenu__board theMenu__board">
                 <img src="/media/menu/menu 1.jpg" alt="" class="board__img">
             </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Contac and location page -->
-        <div class="l-generalViewport standarContent" id="contact">
-                       
-                <div class="contactContainer">
-                    <form class="contactForm">
-                        <input type="text" placeholder="Nombre"><br>
-                        <input type="tel" placeholder="Telefono"><br>
-                        <textarea placeholder="Dejanos tu comentario" name="" id="" cols="30" rows="10"></textarea>
-        
-                    </form>
-                        <div class="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15922.290767903878!2d-76.3039945!3d3.9013345!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4bf0f20e115982a!2sAbuela%20Restaurant!5e0!3m2!1ses-419!2sco!4v1567456223210!5m2!1ses-419!2sco" width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
-                         </div>
+        <!-- Contact and location -->
+        <div id="contact" class="l-generalViewport t-contact" >
+            <div class="l-contact t-darkLight">
+                <form class="contact__form t-darkLight f-normal">
+                    <input type="text" placeholder="Nombre"><br>
+                    <input type="tel" placeholder="Telefono"><br>
+                    <textarea placeholder="Dejanos tu comentario" name="" id="" cols="30" rows="10"></textarea>
+                </form>
+                <div class="contact__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15922.290767903878!2d-76.3039945!3d3.9013345!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4bf0f20e115982a!2sAbuela%20Restaurant!5e0!3m2!1ses-419!2sco!4v1567456223210!5m2!1ses-419!2sco" width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
                 </div>
-            
+            </div>
         </div>
-  
-    
-   
     </main>
-
-    <footer class="footer">
-        <div><p>Abuela Restaurant</p>
-                <p>Dirección: Calle 1 # 1-47 Barrio</p>
-                <p>Telefono: 311 236 2336</p>
-                <p>Buga - Valle del Cauca</p>
-                <p>Correo Electronico:</p>
+    
+    <!-- Footer -->
+    <footer class="l-footer t-footer">
+        <div class="footer__info">
+            <p class="f-small">Abuela Restaurant</p>
+            <p class="f-small">Dirección: Calle 1 # 1-47 Barrio</p>
+            <p class="f-small">Telefono: 311 236 2336</p>
+            <p class="f-small">Buga - Valle del Cauca</p>
+            <p class="f-small">Correo Electronico:</p>
         </div>
-        <div class="footer__logo">
-            <img src="/media/imagotipo_abuela_blanco.png" alt="Logo Abuela Restaurant" class="footer__logoImage">
+        <div class="l-footer__logo">
+            <img src="/media/imagotipo_abuela_blanco.png" alt="Logo Abuela Restaurant" class="logo__image">
         </div>
-        <div>
-            <p>En Redes:</p>
+        <div class="footer__socialMedia">
+            <p class="f-small">En Redes:</p>
         </div>
     </footer> 
  
-
     <script src="/scripts/sticky.js"></script>
     <!-- <script src="/scripts/logo-sticky.js"></script> -->
 

@@ -1,3 +1,9 @@
+%marginItem {
+    margin: 2rem;
+}
+
+
+
 //===========================
 // Modules for homepage
 //===========================
@@ -31,13 +37,19 @@
         height: 50%;
     }
 
-//===========================
-// Modules for About Us page
-//===========================
+//==============================
+// Modules for About Us section
+//==============================
 
 .aboutUs__mainTitle {
     padding: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     text-align: center;
+
 }
 
 .aboutUs__parallax {
@@ -75,18 +87,19 @@
     text-align: center;
 }
 
-//===========================
-// Modules for Menu page
-//===========================
+//==============================
+// Modules for the Menu section
+//==============================
 .theMenu__description {
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
    
-    border: 5px solid var(--mainColor);
+    @extend %marginItem;
+    border: 5px solid $mainColor;
     border-radius: 15px;
-    box-shadow: 0 5px 5px 2px var(--darkColor);
+    box-shadow: 0 5px 5px 2px $darkColor;
   
     background-image: url(/media/menu_background.jpg);
     background-size: 100% 100%;
@@ -102,3 +115,60 @@
         padding: 1rem;
         text-align: center;
     }
+
+    .board__img {
+        width: 100%;
+        height: 100%;
+        
+        border: 10px solid $mainColor;
+        border-radius: 15px;
+        
+        box-shadow: 0 5px 5px 2px $darkColor;
+    }
+
+    .theMenu__board {
+        @extend %marginItem;
+    }
+
+//================================
+// Modules for the Contact section
+//================================
+.contact__form {
+    @extend %marginItem;
+    border: 5px solid $mainColor;
+    border-radius: 10px;
+    padding: 1.5rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 10px 5px -5px $darkColor;
+}
+
+.contact__map {
+    @extend %marginItem;
+    border: 5px solid $mainColor;
+    border-radius: 15px;
+    box-shadow: 0 10px 5px -5px $darkColor;
+}
+
+//================================
+// Modules for the footer section
+//================================
+// .footer__info {
+//     border: 1px solid green;
+// }
+
+
+.logo__image {
+    width: 100%;
+    height: 100%;
+}
+
+
+// .footer__socialMedia {
+        
+    
+// }

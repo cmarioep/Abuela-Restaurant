@@ -1,15 +1,27 @@
-t-{
-    &darkLight: var(--darkLightColor); /*Used in homepage as filter for coverContainer*/
+.t-{
+    &generalBackground {
+        background-color: $backgroundColor;
+        color: $mainColor;
+    }
+    
+    &darkLight {
+        background-color: $darkLightColor; /*Used in homepage and contact section as dark filter*/
+    }
 
     &backgroundParallax {
         background-image: url(/media/img-parallax.jpg);
     }
 
+    &contact {
+        color: $backgroundColor;
+        
+        background-image: url(/media/wood-light-summer-lunch.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
 
-
-
-
-
-
-
+    &footer {
+        background-color: $contentColor;
+        color: $backgroundColor;
+    }
 }

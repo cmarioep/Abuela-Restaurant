@@ -1,3 +1,4 @@
+/* en sass */
 :root {
     --darkColor: rgba(0,0,0,0.7);
     --darkLightColor: rgba(0,0,0,0.5);
@@ -10,33 +11,32 @@
     --backgroundColor: #F2EFDF;
 }
 
+/* en sass */
+@font-face {
+    font-family: amarillo;
+    src: url(/fonts/Amarillo.otf);
+}
+
+/* en sass */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
-body {
+/* en sass */
+.t-generalBackground {
     background-color: var(--backgroundColor);
+    color: var(--mainColor);
     
 }
 
-p {
-    font-size: 1.5rem;
-}
 
 /* en sass */
 .l-generalViewport {
     width: 100%;;
     min-height: 100vh;
 }
-
-/* .homeViewport {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 
 /* ==================================homepage============================= */
@@ -77,8 +77,15 @@ p {
     }
 
 /* ===================AboutUS=============================== */
- /* en sass */  
+
+/* en sass */
+.f-titles {
+    font-family: amarillo;
+}
+
+
 .l-aboutUs {
+     /* en sass */
     height: 100vh;
   
     display: flex;
@@ -86,8 +93,7 @@ p {
     
     padding-top: 10vh;
 
-    font-size: 1.5rem;
-    color: var(--contentColor);
+
 }
 
     /*en sass*/
@@ -96,14 +102,24 @@ p {
         height: 15vh;
     }
 
+    /*en sass*/
+    .f-big {
+        font-size: 3rem;
+
+    }
+    
     .aboutUs__mainTitle {
-        font-size: 4rem;
-        /* padding: 1.5rem; */
+
+      
+        /* en sass */
+        margin-bottom: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
+        padding: 1.5rem;
     }
+
 
     /* en sass */
     .l-aboutUs__parallax {
@@ -140,7 +156,11 @@ p {
                 background-image: url(/media/slider/5.jpg);
             }
         }    
-     
+    
+    
+
+    
+        
     /* en sass */  
     .l-aboutUs__slogan{
         width: 100%;
@@ -173,10 +193,9 @@ p {
             width: 400px;
         }
 
+        /* en sass */ 
         .theMenu__description {
-            color: var(--contentColor);
-            
-             /* en sass */    
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -188,21 +207,33 @@ p {
             border-radius: 15px;
         }
 
+        /*en sass*/
+        .f-medium {
+            font-size: 2rem;
+        }
+
         .description__subTitle {
             
-            font-size: 2rem;
+            
             /* en sass */ 
             padding: 1rem;
             text-align: center;
         }
 
+        /* en sass */ 
+        .f-normal {
+            font-size: 1.3rem;
+        }
+        /* en sass */ 
         .description__text{
             padding: 1rem;
             text-align: center;
         }
         
 
-        .theMenu__board {
+
+         /* en sass */ 
+        .l-theMenu__board {
             
             /* justify-self: flex-end; */
             height: 500px;
@@ -210,46 +241,28 @@ p {
             
         }
 
-
+         /* en sass */ 
         .board__img {
             width: 100%;
             height: 100%;
+            
             border: 10px solid var(--mainColor);
-                    
-
             border-radius: 15px;
             
-
             box-shadow: 0 5px 5px 2px var(--darkColor);
-            /* box-shadow: 0 10px 5px -5px var(--darkColor); */
+            
         } 
 
+ /* ===================Contact=============================== */      
 
-
-
- 
-.standarContent {
-    /* width: 100%;
-    min-height: 100vh; */
-    font-size: 1.5rem;
-    color: var(--backgroundColor);
-    background-image: url(/media/wood-light-summer-lunch.jpg);
-       
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    /* padding-top: 10vh; */
-    
-
-    
-    
-}
-
-
-.contactContainer {
+ /* en sass */
+ .l-contact {
     width: 100%;
     height: 100vh;
-    background-color: var(--darkLightColor);
     padding-top: 10vh;
+    /* background-color: var(--darkLightColor); */
+    
+    
     position: relative;
     z-index: 1000;
    
@@ -259,50 +272,96 @@ p {
     align-items: center;
 }
 
-.contactForm {
-   padding: 1.5rem;
+/* en sass */
+.t-contact {
+   
+    color: var(--backgroundColor);
+    background-image: url(/media/wood-light-summer-lunch.jpg);
+      
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+
+/* en sass */
+.contact__form {
+    padding: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    background-color: var(--darkColor);
     border: 5px solid var(--mainColor);
     box-shadow: 0 10px 5px -5px var(--darkColor);
     border-radius: 10px;
     
 }
 
-.map {
+/* en sass */
+.contact__map {
     
     border: 5px solid var(--mainColor);
     border-radius: 15px;
     box-shadow: 0 10px 5px -5px var(--darkColor);
     /* display: inline-block; */
-    
-    
+ 
 }
 
-.footer {
-    
+/* ===================Footer=============================== */    
+
+
+/*en sass*/
+.t-footer {
     background-color: var(--contentColor);
     color: var(--backgroundColor);
-    height: 15vh;
-    display: flex;
-    justify-content: space-evenly;
+    
 }
 
-.footer p{
-    font-size: 0.8rem;
+.l-footer {
+    
+
+    /* en sass */
+    width: 100%;
+    height: 15vh;
+
+    padding: 1rem;
+
+    display: flex;
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
 }
-    .footer__logo {
-        width: 180px;
-        height: 10vh;
-       
+
+    /* en sass */
+    .f-small {
+        font-size: 0.8rem;
     }
 
-        .footer__logoImage {
-            width: 100%;
-            height: 100%;
-        }
+    /*en sass*/ 
+    .footer__info {
+        border: 1px solid green;
+    }
 
+    /* en sass */
+    .l-footer__logo {
+        
+        border: 1px solid green;
+        width: 160px;
+        height: 10vh;
+    }
+    
+    /* en sass */
+    .logo__image {
+        
+        width: 100%;
+        height: 100%;
+    }
 
+    /*en sass*/
+    .footer__socialMedia {
+        
+        border: 1px solid green;
+    }
