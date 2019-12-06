@@ -12,14 +12,14 @@
     align-items: center;
 }
 
-%responsiveViewport {
+%fullViewport {
     width: 100%;
     min-height: 100vh;
 }
 
 .l-{
     &generalViewport {
-        @extend %responsiveViewport;
+        @extend %fullViewport;
     }
     
 
@@ -63,7 +63,7 @@
 
     // Contact section
     &contact{
-        @extend %responsiveViewport;
+        @extend %fullViewport;
         @extend %viewporContainer;
     }
 
